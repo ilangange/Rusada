@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rusada.Aviation.API", "Rusada.Aviation.API\Rusada.Aviation.API.csproj", "{A4F52DE0-8D81-4EC7-9D35-DC82D9A861B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rusada.Aviation.Core", "Rusada.Aviation.Core\Rusada.Aviation.Core.csproj", "{31AB1564-993C-4424-B73C-22B884F89C59}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rusada.Aviation.Infrastructure", "Rusada.Aviation.Infrastructure\Rusada.Aviation.Infrastructure.csproj", "{D4233E8A-3D2D-4586-AB1D-AEEA38460B5D}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Rusada.Aviation.WebUI", "Rusada.Aviation.WebUI\Rusada.Aviation.WebUI.esproj", "{5470F2E1-93B7-4E87-892C-AD74970D87E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rusada.Aviation.Tests", "Rusada.Aviation.Tests\Rusada.Aviation.Tests.csproj", "{F90ED2C1-71D5-4B99-872B-4FE131C77543}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A4F52DE0-8D81-4EC7-9D35-DC82D9A861B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4F52DE0-8D81-4EC7-9D35-DC82D9A861B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4F52DE0-8D81-4EC7-9D35-DC82D9A861B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4F52DE0-8D81-4EC7-9D35-DC82D9A861B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31AB1564-993C-4424-B73C-22B884F89C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31AB1564-993C-4424-B73C-22B884F89C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31AB1564-993C-4424-B73C-22B884F89C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31AB1564-993C-4424-B73C-22B884F89C59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4233E8A-3D2D-4586-AB1D-AEEA38460B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4233E8A-3D2D-4586-AB1D-AEEA38460B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4233E8A-3D2D-4586-AB1D-AEEA38460B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4233E8A-3D2D-4586-AB1D-AEEA38460B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5470F2E1-93B7-4E87-892C-AD74970D87E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5470F2E1-93B7-4E87-892C-AD74970D87E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5470F2E1-93B7-4E87-892C-AD74970D87E8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5470F2E1-93B7-4E87-892C-AD74970D87E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5470F2E1-93B7-4E87-892C-AD74970D87E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5470F2E1-93B7-4E87-892C-AD74970D87E8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F90ED2C1-71D5-4B99-872B-4FE131C77543}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90ED2C1-71D5-4B99-872B-4FE131C77543}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90ED2C1-71D5-4B99-872B-4FE131C77543}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90ED2C1-71D5-4B99-872B-4FE131C77543}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D40A7E2-6E4F-436A-ABC1-022E07FFA051}
+	EndGlobalSection
+EndGlobal

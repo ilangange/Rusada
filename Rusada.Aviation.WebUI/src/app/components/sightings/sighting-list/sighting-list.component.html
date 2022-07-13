@@ -1,0 +1,95 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label>Search By:</label>
+        </div>
+        <div class="col-md-8">
+          <select class="form-control" [(ngModel)]="searchBy">
+            <option value="make">Make</option>
+            <option value="model">Model</option>
+            <option value="registration">Registration</option>
+          </select>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <label>Search Text:</label>
+        </div>
+        <div class="col-md-8">
+          <input type="text" class="form-control" [(ngModel)]="searchText"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-primary col-md-8  float-end mb-3" (click)="search()">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6"></div>
+  </div>
+</div>
+<!-- <div class="form-group col-sm-12 row">
+  <label class="col-sm-2 col-form-label">Search By:</label>
+  <div class="form-group col-sm-8 w-auto">
+    <select>
+      <option value="make">Make</option>
+      <option value="model">Model</option>
+      <option value="registration">Registration</option>
+    </select>
+  </div>
+</div>
+<div class="form-group col-sm-12 row">
+  <label class="col-sm-2 col-form-label">Search Value:</label>
+  <div class="form-group col-sm-8">
+    <input type="text" />
+  </div>
+</div>
+<div class="form-group col-sm-5 row">
+  <button class="mb-3">Search()</button>
+</div> -->
+
+<table
+  datatable
+  [dtOptions]="dtOptions"
+  [dtTrigger]="dtTrigger"
+  class="row-border hover"
+>
+  <thead>
+    <tr>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Registration</th>
+      <th>Location</th>
+      <th>Date</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody *ngIf="sightingList?.length != 0">
+    <tr *ngFor="let sighting of sightingList">
+      <td>{{ sighting.make }}</td>
+      <td>{{ sighting.model }}</td>
+      <td>{{ sighting.registration }}</td>
+      <td>{{ sighting.location }}</td>
+      <td>{{ sighting.date }}</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+  <tbody *ngIf="sightingList?.length == 0">
+    <tr>
+      <td colspan="3" class="no-data-available">No data!</td>
+    </tr>
+  </tbody>
+  <!-- <tfoot>
+      <tr>
+        <th><input type="text" placeholder="Search Make" name="search-make" (change)="rerender()"/></th>
+        <th><input type="text" placeholder="Search Model" name="search-model" (change)="rerender()"/></th>
+        <th><input type="text" placeholder="Search Registration" name="search-registration" (change)="rerender()"/></th>
+      </tr>
+    </tfoot> -->
+</table>

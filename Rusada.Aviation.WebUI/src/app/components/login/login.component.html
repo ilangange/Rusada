@@ -1,0 +1,45 @@
+<div id="formContent">
+  <form [formGroup]="form">
+    <div class="form-group">
+      <label class="col-md-12 control-label" for="txtUsername">Username</label>
+      <div class="col-md-12">
+        <input
+          id="txtUsername"
+          name="txtUsername"
+          type="text"
+          placeholder="username"
+          class="form-control input-md"
+          formControlName="username"
+        />
+      </div>
+    </div>
+
+    <div class="form-group mt-2">
+      <label class="col-md-12 control-label" for="txtPassword">Password</label>
+      <div class="col-md-12">
+        <input
+          id="txtPassword"
+          name="txtPassword"
+          type="password"
+          placeholder="password"
+          class="form-control input-md"
+          formControlName="password"
+        />
+      </div>
+    </div>
+
+    <div class="form-group mt-3">
+      <div class="col-md-12">
+        <button
+          id="btnLogin"
+          name="btnLogin"
+          class="btn btn-primary"
+          (click)="login()"
+          style="width: 100%;"
+        >
+          Login
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
