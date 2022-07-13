@@ -11,7 +11,7 @@ Below are the technologies used to develop the solution
 ## Steps to be followed
 1) Clone repository
 2) Change the connection string in the appsettings.json file
-3) Database migration will automatically run the application start
+3) Database migration will automatically run when application starts
 4) Navigate to "Rusada.Aviation.WebUI" folder and open command promt and run the below command
 
     "npm install"
